@@ -20,5 +20,28 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('testrepo') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      has_wiki: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      gh_pages_build_type: 'legacy',
+      gh_pages_source_branch: 'gh-pages',
+      gh_pages_source_path: '/',
+      workflows+: {
+        default_workflow_permissions: 'write',
+      },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            'gh-pages',
+          ],
+          deployment_branch_policy: 'selected',
+        },
+      ],
+    },
   ],
 }
