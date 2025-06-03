@@ -39,7 +39,7 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
       web_commit_signoff_required: false,
       gh_pages_build_type: 'legacy',
       gh_pages_source_branch: 'gh-pages',
-      gh_pages_source_path: '/',
+      gh_pages_source_path: '/docs',
       workflows+: {
         default_workflow_permissions: 'write',
       },
