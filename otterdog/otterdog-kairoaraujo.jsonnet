@@ -20,6 +20,15 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('otterdog-configs') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      has_wiki: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('testrepo') {
       allow_merge_commit: true,
       allow_update_branch: false,
