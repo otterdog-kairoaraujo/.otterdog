@@ -33,7 +33,7 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      has_wiki: false,
+      has_wiki: true,
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
