@@ -1,0 +1,8 @@
+name: Upload sbom data to sbom.eclipse.org
+description: |-
+  This policy uploads generated sbom data to sbom.eclipse.org.
+type: dependency_track_upload
+config:
+  artifact_name: "eclipse-sbom-data"
+  base_url: "https://sbom.tail63ee9e.ts.net"
+  workflow_filter: ".*/store-sbom-data.yml.*"
