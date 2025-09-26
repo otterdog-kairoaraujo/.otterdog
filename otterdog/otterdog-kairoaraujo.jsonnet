@@ -47,7 +47,7 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: "Test",
-      has_issues: false,
+      has_issues: true,
       has_wiki: false,
       homepage: "",
       secret_scanning: "disabled",
