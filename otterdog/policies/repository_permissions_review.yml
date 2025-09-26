@@ -1,0 +1,8 @@
+name: Repository Permissions Review
+description: |-
+  This policy creates GitHub issues requesting project committers to review
+  their maintainers and access credentials for package repositories.
+type: repository_permissions_review
+config:
+  artifact_name: "repository-review-data"
+  workflow_filter: ".*/repository-permissions-review.yml.*"
