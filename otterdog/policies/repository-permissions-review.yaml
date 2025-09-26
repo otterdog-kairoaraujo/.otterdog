@@ -5,4 +5,4 @@ description: |-
 type: repository_permissions_review
 config:
   artifact_name: "repository-review-data"
-  workflow_filter: ".*/repository-permissions-review@.*"
+  workflow_filter: ".*/repository-permissions-review\\.yml@.*"
