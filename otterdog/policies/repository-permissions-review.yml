@@ -1,18 +1,8 @@
-name: Maintainer Permissions Review
-
-on:
-  workflow_call:
-    inputs:
-      frequency_months:
-        description: 'Frequency of reviews in months'
-        required: false
-        type: number
-        default: 12
-jobs:
-  trigger-review:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Trigger Review
-        run: |
-          echo "Triggering maintainer permissions review"
-          echo "Frequency: ${{ inputs.frequency_months }} months"
+# Maintainer Permissions Review Policy
+type: maintainer_permissions_review
+name: "Maintainer Permissions Review"
+description: "Automatically create periodic issues to review repository maintainers, collaborators, and package registry access"
+config:
+  workflow_filter: ".*/repository-permissions-review.yml.*"
+  frequency_months: 12
+  issue_title: "Periodic Review: Maintainer and Collaborator Permissions"
