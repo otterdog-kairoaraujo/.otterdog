@@ -1,18 +1,18 @@
-  name: Maintainer Permissions Review
-  
-  on:
-    workflow_call:
-      inputs:
-        frequency_months:
-          description: 'Frequency of reviews in months'
-          required: false
-          type: number
-          default: 12
-  jobs:
-    trigger-review:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Trigger Review
-          run: |
-            echo "Triggering maintainer permissions review"
-            echo "Frequency: ${{ inputs.frequency_months }} months"
+name: Maintainer Permissions Review
+
+on:
+  workflow_call:
+    inputs:
+      frequency_months:
+        description: 'Frequency of reviews in months'
+        required: false
+        type: number
+        default: 12
+jobs:
+  trigger-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Review
+        run: |
+          echo "Triggering maintainer permissions review"
+          echo "Frequency: ${{ inputs.frequency_months }} months"
