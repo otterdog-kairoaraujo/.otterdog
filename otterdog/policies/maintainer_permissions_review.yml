@@ -1,0 +1,15 @@
+# Maintainer Permissions Review Policy
+type: maintainer_permissions_review
+name: "Maintainer Permissions Review"
+description: "Automatically create periodic issues to review repository maintainers, collaborators, and package registry access"
+config:
+  frequency_months: 12
+  issue_title: "Periodic Review: Maintainer and Collaborator Permissions"
+  services:
+    - "PyPI (if applicable)"
+    - "npm (if applicable)"
+    - "Maven Central (if applicable)"
+    - "Docker Hub (if applicable)"
+    - "ReadTheDocs (if applicable)"
+    - "Cloud Infrastructure (AWS/GCP/Azure)"
+    - "CI/CD Systems (Jenkins/CircleCI/etc.)"

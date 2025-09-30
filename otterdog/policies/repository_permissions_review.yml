@@ -1,8 +1,0 @@
-name: Annual Maintainer Permissions Review
-description: |-
-  This policy creates annual GitHub issues for maintainer permissions review
-  across various platforms including package repositories, GitHub access,
-  and third-party services.
-type: maintainer_permissions_review
-config:
-  frequency_interval: 12  # Annual review
