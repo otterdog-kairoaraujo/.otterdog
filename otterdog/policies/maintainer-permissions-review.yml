@@ -4,5 +4,4 @@ name: "Maintainer Permissions Review"
 description: "Automatically create periodic issues to review repository maintainers, collaborators, and package registry access"
 config:
   workflow_filter: ".*/maintainer-permissions-review.yml.*"
-  frequency_months: 12
   issue_title: "Periodic Review: Maintainer and Collaborator Permissions"
