@@ -1,6 +1,6 @@
 # Maintainer Permissions Review Policy
-type: maintainer_permissions_review
-name: "Maintainer Permissions Review"
+type: project_permissions_review
+name: "Project Permissions Review"
 description: "Automatically create periodic issues to review repository maintainers, collaborators, and package registry access"
 config:
   workflow_filter: ".*/maintainer-permissions-review.yml.*"
