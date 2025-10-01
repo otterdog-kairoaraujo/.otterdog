@@ -3,5 +3,5 @@ type: project_permissions_review
 name: "Project Permissions Review"
 description: "Automatically create periodic issues to review repository maintainers, collaborators, and package registry access"
 config:
-  workflow_filter: ".*/maintainer-permissions-review.yml.*"
+  workflow_filter: ".*/project-permissions-review.yml.*"
   issue_title: "Periodic Review: Maintainer and Collaborator Permissions"
