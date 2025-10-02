@@ -1,9 +1,9 @@
 name: Project Permissions Review
 description: |-
-  Automatically create annual issues to review repository maintainers,
+  Automatically create periodic issues to review repository maintainers,
   collaborators, and package registry access.
 type: project_permissions_review
 config:
-  workflow_filter: ".*/project-permissions-review.yml.*"
+  review_frequency: 12  # Annual reviews
+  enabled_by_default: true
   issue_title: "Annual Security Review: Project Permissions"
-  artifact_name: "project-permissions-review-content"
