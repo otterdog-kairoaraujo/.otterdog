@@ -1,9 +1,0 @@
-name: Project Permissions Review
-description: |-
-  Automatically create periodic issues to review repository maintainers,
-  collaborators, and package registry access.
-type: project_permissions_review
-config:
-  review_frequency: 12  # Annual reviews
-  enabled_by_default: true
-  issue_title: "Annual Security Review: Project Permissions"
