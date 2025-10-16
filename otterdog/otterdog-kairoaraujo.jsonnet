@@ -13,7 +13,7 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
   _repositories+:: [
     orgs.newRepo('.otterdog') {
       allow_merge_commit: true,
-      allow_update_branch: false,
+      allow_update_branch: true,
       delete_branch_on_merge: false,
       has_wiki: false,
       secret_scanning: "disabled",
