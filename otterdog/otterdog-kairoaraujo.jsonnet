@@ -44,7 +44,7 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
     orgs.newRepo('test') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       description: "Test",
       has_issues: true,
