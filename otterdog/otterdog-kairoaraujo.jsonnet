@@ -19,6 +19,11 @@ orgs.newOrg('otterdog-kairoaraujo', 'otterdog-kairoaraujo') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      code_scanning_default_languages: [
+        "actions",
+        "go",
+        "python",
+      ],
     },
     orgs.newRepo('otterdog-configs') {
       allow_merge_commit: true,
